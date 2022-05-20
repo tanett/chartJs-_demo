@@ -62,12 +62,12 @@ const ChartGradientLine = () => {
             {
                 label: 'Dataset 1',
                 data: [-100,200],
-
+                backgroundColor: 'rgba(255,99,252,0.82)',
             },
             {
                 label: 'Dataset 2',
                 data: [250,-25,255,300,],
-
+                backgroundColor: 'rgba(59,83,241,0.82)',
             },
         ],
     };
@@ -104,7 +104,7 @@ const ChartGradientLine = () => {
                 ...data,
                 datasets: data.datasets.map(dataset => ({
                     ...dataset,
-                    borderColor: createGradient(chart.ctx, chart.chartArea),
+                    borderColor:  [ 'rgba(255,99,252,0.82)' ,'rgba(59,83,241,0.82)' ]  //createGradient(chart.ctx, chart.chartArea),
                 })),
             };
 
