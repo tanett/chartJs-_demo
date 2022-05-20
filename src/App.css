@@ -2,7 +2,7 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-
+justify-content: space-evenly;
 }
 
 .App section {
@@ -10,4 +10,5 @@
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 200px;
+  max-width: 600px;
 }
